@@ -222,7 +222,6 @@ export default function ServersPage() {
           </Card>
         </TabsContent>
         <TabsContent value="db" className="mt-4">
-          {/* Similar content for database servers */}
           <Card>
             <CardHeader>
               <CardTitle>Database Servers</CardTitle>
@@ -274,7 +273,6 @@ export default function ServersPage() {
           </Card>
         </TabsContent>
         <TabsContent value="validator" className="mt-4">
-          {/* Similar content for blockchain validators */}
           <Card>
             <CardHeader>
               <CardTitle>Blockchain Validators</CardTitle>

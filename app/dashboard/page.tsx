@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { SearchBar } from "@/components/search-bar"
 import { ChatPanel } from "@/components/ai-chatbot/chat-panel"
+import { NotificationSimulator } from "@/components/notifications/notification-simulator"
 
 export default function DashboardPage() {
   return (
@@ -53,6 +54,8 @@ export default function DashboardPage() {
           <ChatPanel />
         </CardContent>
       </Card>
+
+      <NotificationSimulator />
     </div>
   )
 }

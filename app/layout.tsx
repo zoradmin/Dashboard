@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-context"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { Toaster } from "@/components/ui/toaster"
+import { NotificationProvider } from "@/contexts/notification-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,8 +25,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider defaultTheme="system">
           <SidebarProvider>
-            {children}
-            <Toaster />
+            <NotificationProvider>
+              {children}
+              <Toaster />
+            </NotificationProvider>
           </SidebarProvider>
         </ThemeProvider>
       </body>

@@ -159,11 +159,17 @@ http {
                   </SelectContent>
                 </Select>
               </div>
-              <div className="flex-1 p-0 overflow-auto">
+              <div className="flex-1 p-0 overflow-auto bg-[#1e1e1e]">
                 <textarea
                   value={fileContent}
                   onChange={(e) => setFileContent(e.target.value)}
-                  className="w-full h-full p-4 font-mono text-sm bg-background focus:outline-none resize-none"
+                  className="w-full h-full p-4 font-mono text-sm bg-[#1e1e1e] text-gray-200 focus:outline-none resize-none leading-relaxed"
+                  style={{
+                    backgroundImage: "linear-gradient(transparent 50%, rgba(100, 100, 100, 0.1) 50%)",
+                    backgroundSize: "100% 2.5em",
+                    backgroundAttachment: "local",
+                    lineHeight: "1.25em",
+                  }}
                 />
               </div>
             </TabsContent>
